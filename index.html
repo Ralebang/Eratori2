@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erätori</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#etusivu">Erätori</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#etusivu">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ilmoitukset">Ilmoitukset</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lisaa-ilmoitus">Lisää ilmoitus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#turvallinen-kaupankaynti"
+                >Turvallinen kaupankäynti</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="etusivu" class="hero d-flex align-items-center text-center">
+      <div class="container">
+        <h1 class="display-2 fw-bold">Erätori</h1>
+        <p class="lead mt-4">
+          Osta ja myy käytettyjä kalastustarvikkeita helposti ja turvallisesti.
+        </p>
+        <a href="#ilmoitukset" class="btn btn-primary btn-lg mt-3">
+          Selaa ilmoituksia
+        </a>
+      </div>
+    </section>
+
+    <!-- ILMOITUKSET -->
+    <section id="ilmoitukset" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center mb-5">Ilmoitukset</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 bg-secondary text-white">
+              <img
+                src="images/vapa.jpg"
+                class="card-img-top"
+                alt="Kalastusvapa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daiwa Ninja X</h5>
+                <p class="card-text">Hyväkuntoinen avokelavapa.</p>
+                <p class="fw-bold">36,99€</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 bg-secondary text-white">
+              <img src="images/kela.jpg" class="card-img-top" alt="Kela" />
+              <div class="card-body">
+                <h5 class="card-title">Abu Garcia</h5>
+                <p class="card-text">Vähän käytetty kela.</p>
+                <p class="fw-bold">55€</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 bg-secondary text-white">
+              <img src="images/uistin.jpg" class="card-img-top" alt="Uistin" />
+              <div class="card-body">
+                <h5 class="card-title">Uistinsetti</h5>
+                <p class="card-text">10 kappaleen setti.</p>
+                <p class="fw-bold">15€</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 bg-secondary text-white">
+              <img
+                src="images/jigit.jpg"
+                class="card-img-top"
+                alt="Jigisetti"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Jigisetti</h5>
+                <p class="card-text">
+                  4 kappaleen setti. Sisältäen eri värejä ja 5g painot.
+                </p>
+                <p class="fw-bold">3,50€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#lisaa-ilmoitus" class="btn btn-primary btn-lg">
+            Lisää oma ilmoitus
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISÄÄ ILMOITUS -->
+    <section id="lisaa-ilmoitus" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Lisää ilmoitus</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Tuotteen nimi</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Kuvaus</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Hinta</label>
+                <input type="number" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Lisää kuva</label>
+                <input type="file" class="form-control" />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Lähetä ilmoitus
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURVALLINEN KAUPANKÄYNTI -->
+    <section id="turvallisuus" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center mb-5">Turvallinen kaupankäynti</h2>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <h4>Tarkista tuotteen kunto</h4>
+            <p>Varmista tuotteen kunto ja pyydä lisäkuvia tarvittaessa.</p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h4>Käytä turvallista maksua</h4>
+            <p>Maksu pidetään palvelussa kunnes ostaja hyväksyy tuotteen.</p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h4>Vältä huijauksia</h4>
+            <p>Älä hyväksy epäilyttäviä viestejä tai maksutapoja.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YHTEYSTIEDOT -->
+    <footer class="py-4 text-center">
+      <p class="mb-1">Erätori Oy</p>
+      <p class="mb-1">Kalastuksenkatu 15, 02210 Espoo</p>
+      <p class="mb-0">info@eratori.fi | +358 40 5150040</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
